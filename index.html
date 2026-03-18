@@ -522,12 +522,13 @@
         </div>
         <div class="card-award">🏆 2024 Technovation Alumni Changemaker Award · $5,000</div>
       </div>
-      <div style="background: linear-gradient(135deg, rgba(107,91,158,0.08), rgba(45,53,128,0.06)); border-radius: 16px; height: 260px; display:flex; align-items:center; justify-content:center; border: 1px solid rgba(107,91,158,0.12);">
+      <div style="background: linear-gradient(135deg, rgba(107,91,158,0.08), rgba(45,53,128,0.06)); border-radius: 16px; height: 260px; display:flex; flex-direction:column; align-items:center; justify-content:center; gap:20px; border: 1px solid rgba(107,91,158,0.12);">
         <div style="text-align:center; color: var(--purple-light);">
           <div style="font-size:56px; margin-bottom:16px;">🌿</div>
           <div style="font-family:'Cormorant Garamond',serif; font-size:18px; font-weight:300;">95% accuracy</div>
           <div style="font-size:12px; opacity:0.6; margin-top:4px;">7 medicinal plant species</div>
         </div>
+        <a href="https://drive.google.com/file/d/1rUXhkFARGNZwIDHgKcUu4hBvE8q9CcNP/view?usp=drive_link" target="_blank" class="btn btn-primary" style="font-size:12px; padding:10px 20px;">▶ Watch Demo ↗</a>
       </div>
     </div>
 
@@ -597,6 +598,35 @@
       </div>
     </div>
 
+    <!-- Nakai - Gallery Management -->
+    <div class="card card-featured" id="card5">
+      <div>
+        <div class="card-icon">🖼️</div>
+        <div class="card-tag">Full-Stack · Web · PHP</div>
+        <h3>Nakai</h3>
+        <p>An art gallery management system built as a final Web Technologies project. Handles artwork cataloguing, artist profiles, exhibitions, and sales — with a clean, gallery-inspired interface.</p>
+        <div class="card-chips">
+          <span class="chip">PHP</span>
+          <span class="chip">MySQL</span>
+          <span class="chip">HTML/CSS</span>
+          <span class="chip">JavaScript</span>
+        </div>
+        <div class="card-links">
+          <a href="https://github.com/RuvaS20/nakai" target="_blank" class="card-link">GitHub ↗</a>
+        </div>
+      </div>
+      <div style="border-radius: 16px; overflow:hidden; height: 260px; border: 1px solid rgba(107,91,158,0.12);">
+        <iframe
+          src="https://www.youtube.com/embed/KmMEYoGTXuM"
+          title="Nakai Gallery Demo"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+          style="width:100%; height:100%; display:block;">
+        </iframe>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -642,11 +672,11 @@
   <div class="footer-links">
     <a href="https://github.com/RuvaS20" target="_blank">GitHub</a>
     <a href="https://linkedin.com/in/ruvarashe-sadya" target="_blank">LinkedIn</a>
-    <a href="mailto:ruvarashe.sadya@ashesi.edu.gh">Email</a>
+    <a href="/cdn-cgi/l/email-protection#bbc9cecddac9dac8d3de95c8dadfc2dafbdac8d3dec8d295dedfce95dcd3">Email</a>
   </div>
 </footer>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 gsap.registerPlugin(ScrollTrigger);
 
 // NAV fade in
@@ -718,11 +748,3 @@ window.addEventListener('scroll', () => {
     const links = document.querySelectorAll('nav a');
     if (y >= el.offsetTop && y < el.offsetTop + el.offsetHeight) {
       links.forEach(l => l.classList.remove('active'));
-      const active = document.querySelector(`nav a[href="#${id}"]`);
-      if (active) active.classList.add('active');
-    }
-  });
-});
-</script>
-</body>
-</html>
